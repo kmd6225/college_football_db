@@ -17,4 +17,15 @@ def get_gamelog(school,year, is_offense = True):
         print('Please enter a boolean for is_offense argument ')
 
 
+def get_roster(school, year):
+    school = str(school)
+    year = str(year)
+    link = f'https://www.sports-reference.com/cfb/schools/{school}/{year}-roster.html'
+
+    df = pd.read_html(link, match = 'Player', header= 0)[0]
+    df = df[df['Player'] != 'Player']
+    return(df)
+
+
+
 
