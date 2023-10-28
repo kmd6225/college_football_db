@@ -1,8 +1,8 @@
 This repository contains database code used to create and maintain a College Football Database. There are three planned components:
 
-  1). Python Functions used to scrape college football reference during ETL.
-  2). SQL Procedures used to load the data scraped via the python functions into fact and dimension tables. Corresponding ddl/dml also included.
-  3). A python database application (GUI) for easy querying of the data
+  1). Python Functions used to scrape college football reference during ETL. \n
+  2). SQL Procedures used to load the data scraped via the python functions into fact and dimension tables. Corresponding ddl/dml also included. \n
+  3). A python database application (GUI) for easy querying of the data \n
 
 The initial focus of the Database will be on Big Ten teams but may expand to other conferences.
 
