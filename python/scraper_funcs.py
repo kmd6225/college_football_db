@@ -35,6 +35,11 @@ def get_roster(school, year):
 
     df = pd.read_html(link, match = 'Player', header= 0)[0]
     df = df[df['Player'] != 'Player']
+
+    school_ls = [school for i in range(len(df))]
+    year_ls = [year for i in range(len(df)) ]
+    df['school'] = school_ls
+    df['season'] = year_ls
     return(df)
 
 
